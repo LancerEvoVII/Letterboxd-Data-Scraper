@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 def requestInput():
     movie = input("Enter the name of the movie you want to search for: ")
     movie = movie.replace(" ", "-")
+    movie = movie.lower()
     return movie
 
 url = "https://letterboxd.com/film/" + requestInput()
