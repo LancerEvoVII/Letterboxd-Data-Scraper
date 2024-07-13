@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 def requestInput():
     movie = input("Enter the name of the movie you want to search for: ")
     movie = re.sub(r"[^a-zA-Z0-9 ]", "", movie)
-    movie = movie.lower()
     movie = movie.replace(" ", "-")
     movie = movie.lower()
     return movie
