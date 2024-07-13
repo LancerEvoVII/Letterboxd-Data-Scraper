@@ -8,6 +8,7 @@ def requestInput():
     movie = re.sub(r"[^a-zA-Z0-9 ]", "", movie)
     movie = movie.lower()
     movie = movie.replace(" ", "-")
+    movie = movie.lower()
     return movie
 
 
